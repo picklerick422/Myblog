@@ -7,13 +7,13 @@
     <head>
       <meta charset="utf-8" />
         
-      <meta name="description" content="一个简单的博客" />
+      <meta name="description" content="智慧香水" />
       
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title> 小鸟游六花のBlog</title>
+      <title> 慧·闻</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="https://www.helloimg.com/i/2024/09/24/66f2c0d910833.ico" />
@@ -61,7 +61,7 @@
       <img src="https://www.helloimg.com/i/2024/09/24/66f2c0da6144c.jpg" alt="image frame" />
     </div>
     <div class="cover-inner text-center text-white">
-      <h1><a href="/Myblog/">小鸟游六花のBlog</a></h1>
+      <h1><a href="/Myblog/">慧·闻</a></h1>
       <div id="subtitle-box">
         
         <span id="subtitle"></span>
@@ -87,7 +87,7 @@
   <script>
     try {
       var typed = new Typed("#subtitle", {
-        strings: ['鲁莽比怯懦更接近勇敢的美德。——堂吉柯德', '若复不为无益之事，安能悦有涯之生？', ''],
+        strings: ['AI定制香水，独属于你的芬芳', '一顾倾人城，再顾倾人国。', ''],
         startDelay: 0,
         typeSpeed: 150,
         loop: true,
@@ -151,7 +151,7 @@
     
     
     <article
-  id="post-hello-world"
+  id="post-join"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -162,8 +162,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/Myblog/2024/01/31/hello-world/"
-    >Hello World</a> 
+  <a class="article-title" href="/Myblog/2024/09/25/join/"
+    >加入我们：免费体验ai定制服务！</a> 
 </h2>
  
 
@@ -171,26 +171,262 @@
     </header>
      
     <div class="article-meta">
-      <a href="/Myblog/2024/01/31/hello-world/" class="article-date">
-  <time datetime="2024-01-31T10:07:08.015Z" itemprop="datePublished">2024-01-31</time>
+      <a href="/Myblog/2024/09/25/join/" class="article-date">
+  <time datetime="2024-09-24T16:02:36.000Z" itemprop="datePublished">2024-09-25</time>
 </a>    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI对话示例</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #e5e5e5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .dialog-container {
+        width: 800px;
+        background-color: #ffffff;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        overflow-y: auto; /* Enable scrolling if the content exceeds the container */
+    }
+    .dialog-header {
+        font-size: 24px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+    .user-response-form {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .form-group {
+        display: flex;
+        align-items: center;
+    }
+    .form-group input {
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+        flex: 1;
+    }
+    .form-group button {
+        padding: 12px 25px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 30px; /* More rounded button */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-left: 10px;
+    }
+    .form-group button:hover {
+        background-color: #45a049;
+    }
+    .message-container {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .message {
+        max-width: 60%;
+        padding: 10px;
+        border-radius: 14px;
+        background-color: #e8f5e9;
+        animation: fadeIn 0.5s;
+    }
+    .user-message {
+        background-color: #dbedff;
+        margin-right: 50px; /* Space for avatar */
+    }
+    .ai-message {
+        background-color: #e8f5e9;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ccc;
+        flex-shrink: 0; /* Prevents avatar from shrinking */
+    }
+    .user-avatar {
+        background-color: #4CAF50;
+        position: absolute; /* Position absolutely */
+        right: 10px; /* Align to the right */
+    }
+    .ai-avatar {
+        background-color: #FFC107;
+        margin-right: 10px;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+</head>
+<body>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<div class="dialog-container">
+    <div class="dialog-header">AI对话</div>
+    <div id="chatHistory"></div>
+    <div class="user-response-form">
+        <form id="userResponseForm" onsubmit="return false;">
+            <div class="form-group">
+                <input type="text" id="userResponse" placeholder="输入你的回答" onkeypress="if (event.keyCode == 13) respond();">
+                <button type="button" onclick="respond()">回答</button>
+            </div>
+        </form>
+    </div>
+</div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<script>
+    let currentQuestion = 0;
+    const questions = [
+        "你好，请问你的姓名是什么？",
+        "你对我们的产品有什么需求？",
+        "请告诉我你的地址。",
+        "为您推荐：“璀璨之梦” 香水，香调：  前调：新鲜的柠檬与活力四溢的西柚碰撞，迸发出令人振奋的清新气息，仿佛清晨第一缕阳光洒在脸上，带来满满的活力与明朗之感。  中调：娇艳欲滴的大马士革玫瑰与优雅的晚香玉交织，玫瑰的馥郁芬芳与晚香玉的细腻甜美完美融合，如同漫步在盛开的花园中，尽显优雅迷人的气质。  后调：温暖醇厚的檀香与神秘的麝香携手，营造出沉稳而悠长的余韵。檀香的木质气息给人以宁静之感，麝香则增添了一丝性感与神秘，让人久久难以忘怀。    浓度：这款香水为浓香水（Eau de Parfum），浓度较高。其香味浓郁持久，只需轻轻一喷，便能在身上萦绕数小时。非常适合重要场合或晚间活动，能让你在人群中脱颖而出。    容量：有 30ml、50ml 和 100ml 三种规格可供选择。30ml 的小巧便携，适合放入包包中随时补香；50ml 是较为经典的容量，能满足日常使用需求；100ml 则更适合香水爱好者或长期使用的人群，性价比更高。    持久度：持久度属于长等级。在正常的室内环境下，香味可以持续 8 小时以上；在户外，即使受到风吹日晒等因素影响，也能保持 6 小时左右的迷人香气。随着时间的推移，香味会逐渐变得更加柔和、醇厚，给人不同的感受。    适用人群：主要适合成熟女性和时尚白领。年龄在 25 岁以上，追求高品质生活和独特风格的女性。她们独立自主，充满自信，这款香水能更好地展现她们的优雅气质和魅力。    包装设计：香水瓶采用精致的方形设计，线条简洁流畅。瓶身由高品质的玻璃制成，通透明亮，能清晰地看到香水的色泽。瓶盖为金色金属材质，雕刻着精美的花纹，彰显奢华与高贵。整体以深邃的紫色为主色调，神秘而富有魅力，如同夜空中璀璨的星辰，让人一眼难忘。",
+        "感谢你的回答，我们会尽快联系你。"
+    ];
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+    function appendMessage(text, isUser) {
+        const chatHistory = document.getElementById('chatHistory');
+        const messageContainer = document.createElement('div');
+        messageContainer.className = 'message-container' + (isUser ? ' justify-end' : '');
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        const message = document.createElement('div');
+        message.className = isUser ? 'message user-message' : 'message ai-message';
+        message.textContent = text;
+
+        const avatar = document.createElement('div');
+        avatar.className = isUser ? 'avatar user-avatar' : 'avatar ai-avatar';
+
+        if (isUser) {
+            messageContainer.appendChild(message);
+            messageContainer.appendChild(avatar);
+            messageContainer.style.justifyContent = 'flex-end';
+        } else {
+            messageContainer.insertBefore(avatar, messageContainer.firstChild);
+            messageContainer.appendChild(message);
+        }
+
+        chatHistory.appendChild(messageContainer); // Insert at the bottom for newer messages
+        chatHistory.scrollTop = chatHistory.scrollHeight; // Scroll to the bottom
+    }
+
+    function updateQuestion() {
+        appendMessage(questions[currentQuestion], false);
+        document.getElementById('userResponse').value = ''; // 清空输入框
+    }
+
+    function respond() {
+        const userResponse = document.getElementById('userResponse').value.trim();
+        if (userResponse === '') return; // Prevent empty responses
+
+        // 显示用户的回答
+        appendMessage(userResponse, true);
+
+        // 模拟AI的回答
+        if (currentQuestion < questions.length - 1) {
+            currentQuestion++;
+            updateQuestion();
+        } else {
+            appendMessage("对话结束，感谢你的参与！", false);
+        }
+
+        // 清空输入框，准备下一个问题
+        document.getElementById('userResponse').value = '';
+        document.getElementById('userResponse').focus(); // 聚焦输入框
+    }
+
+    // 初始化第一个问题
+    updateQuestion();
+</script>
+
+</body>
+</html> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="about-about"
+  class="article article-type-about"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/Myblog/2024/09/24/about/"
+    >关于我们</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/Myblog/2024/09/24/about/" class="article-date">
+  <time datetime="2024-09-24T15:01:24.000Z" itemprop="datePublished">2024-09-24</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id=""><a href="#" class="headerlink" title=""></a></h1><hr>
+<h1 id="慧·闻科技有限公司"><a href="#慧·闻科技有限公司" class="headerlink" title=" 慧·闻科技有限公司"></a><center> <strong>慧·闻科技有限公司</strong></h1><h2 id="AI定制香水服务介绍"><a href="#AI定制香水服务介绍" class="headerlink" title=" AI定制香水服务介绍"></a><center> <strong>AI定制香水服务介绍</strong></h2><p>在慧·闻科技有限公司，我们致力于将个性化的香气体验带给每一位热爱生活的人。我们自豪地推出一项创新服务——AI定制香水，这项服务将个性化体验提升到一个新的高度。</p>
+<p><strong>· 我们的使命：</strong><br>利用人工智能技术，为每一位用户打造独一无二的香水体验。</p>
+<p><strong>· 我们的愿景：</strong><br>成为个性化香水定制领域的先锋，让每个人都能享受到定制的香气。</p>
+<p><strong>· 产品服务：</strong><br><em>AI定制香水</em></p>
+<h3 id="如何工作："><a href="#如何工作：" class="headerlink" title=" 如何工作："></a><center> 如何工作：</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导入必要的库</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 假设的AI模型函数，这里用一个示例函数代替</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_perfume_formula</span>(<span class="params">description</span>):</span><br><span class="line">    <span class="comment"># 这里应该是模型的调用代码，我们用一个简单的示例代替</span></span><br><span class="line">    <span class="comment"># 假设模型返回的是一个字典，包含香水的配方参数</span></span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        <span class="string">&quot;top_notes&quot;</span>: <span class="string">&quot;Citrus, Bergamot&quot;</span>,</span><br><span class="line">        <span class="string">&quot;middle_notes&quot;</span>: <span class="string">&quot;Jasmine, Rose&quot;</span>,</span><br><span class="line">        <span class="string">&quot;base_notes&quot;</span>: <span class="string">&quot;Sandalwood, Musk&quot;</span>,</span><br><span class="line">        <span class="string">&quot;alcohol_concentration&quot;</span>: <span class="string">&quot;80%&quot;</span>,</span><br><span class="line">        <span class="string">&quot;scent_duration&quot;</span>: <span class="string">&quot;Long lasting&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    <span class="comment"># 用户输入香水描述</span></span><br><span class="line">    user_description = <span class="built_in">input</span>(<span class="string">&quot;Please describe the perfume you want: &quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 使用AI模型生成香水配方</span></span><br><span class="line">    perfume_formula = generate_perfume_formula(user_description)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 打印配方参数</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Generated Perfume Formula:&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(json.dumps(perfume_formula, indent=<span class="number">4</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<p><strong>· 用户描述：</strong> 用户通过我们的平台描述他们想要的香水体验，无论是清新的海洋气息，还是浪漫的玫瑰花园，或是任何其他他们能想象的香气。</p>
+<p><strong>· AI分析：</strong> 我们的先进大语言模型会分析用户的描述，理解他们的情感和偏好。</p>
+<p><strong>· 香水配置：</strong> 根据用户的描述，我们的AI系统将从成千上万种香水原料中选择并配置出最合适的配方。</p>
+<p><strong>· 手工调制：</strong> 我们的专业调香师将根据AI的配方手工调制香水，确保每一瓶香水都是独一无二的艺术品。</p>
+<p><strong>· 品质保证：</strong> 每一瓶香水都会经过严格的质量控制，确保它符合我们对卓越的承诺。</p>
+<p><strong>· 寄售服务：</strong> 一旦香水完成，我们将直接寄送到用户的手中，让他们即刻体验到他们梦想中的香气。</p>
+<h3 id="我们的承诺："><a href="#我们的承诺：" class="headerlink" title="我们的承诺："></a><center>我们的承诺：</h3><p><strong>个性化：</strong> 每一瓶香水都是根据用户的个人描述定制的。<br><strong>创新：</strong> 我们利用最新的人工智能技术来创造前所未有的香水体验。<br><strong>质量：</strong> 我们承诺提供最高品质的原料和工艺。<br><strong>便捷：</strong> 用户只需几步操作，就能在家中收到他们的定制香水。</p>
+<h3 id="加入我们："><a href="#加入我们：" class="headerlink" title="加入我们："></a><strong>加入我们：</strong></h3><p>我们邀请您体验AI定制香水的魅力。无论是为了自己，还是作为礼物送给亲友，我们的香水都是表达个性和情感的完美选择。</p>
  
       <!-- reward -->
       
@@ -275,7 +511,7 @@
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/Myblog/"><img src="./images/ayer-side.svg" alt="小鸟游六花のBlog"></a>
+    <a href="/Myblog/"><img src="./images/ayer-side.svg" alt="慧·闻"></a>
   </div>
   
   <ul class="nav nav-main">
@@ -285,31 +521,11 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/Myblog/archives">归档</a>
+      <a class="nav-item-link" href="/Myblog/archives">我们的历程</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/Myblog/categories">分类</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/Myblog/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/Myblog/tags/%E6%97%85%E8%A1%8C/">旅行</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/Myblog/friends">友链</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/Myblog/2019/about">关于我</a>
+      <a class="nav-item-link" href="/Myblog/2024/09/24/about/">关于我们</a>
     </li>
     
   </ul>
