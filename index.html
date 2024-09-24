@@ -196,7 +196,8 @@
         height: 100vh;
     }
     .dialog-container {
-        width: 800px;
+        max-width: 100%;
+        width: 100%;
         background-color: #ffffff;
         margin: 20px auto;
         padding: 30px;
@@ -215,12 +216,13 @@
     .user-response-form {
         margin-top: 20px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
     }
     .form-group {
         display: flex;
         align-items: center;
+        flex-grow: 1;
     }
     .form-group input {
         padding: 12px;
@@ -239,7 +241,6 @@
         border-radius: 30px; /* More rounded button */
         cursor: pointer;
         transition: background-color 0.3s ease;
-        margin-left: 10px;
     }
     .form-group button:hover {
         background-color: #45a049;
@@ -255,13 +256,15 @@
         border-radius: 14px;
         background-color: #e8f5e9;
         animation: fadeIn 0.5s;
+        word-wrap: break-word; /* Ensure long words wrap */
     }
     .user-message {
         background-color: #dbedff;
-        margin-right: 50px; /* Space for avatar */
+        margin-left: 10px; /* Space on left for user messages */
     }
     .ai-message {
         background-color: #e8f5e9;
+        margin-right: 10px; /* Space on right for AI messages */
     }
     .avatar {
         width: 40px;
@@ -272,8 +275,7 @@
     }
     .user-avatar {
         background-color: #4CAF50;
-        position: absolute; /* Position absolutely */
-        right: 10px; /* Align to the right */
+        margin-left: 10px;
     }
     .ai-avatar {
         background-color: #FFC107;
@@ -282,6 +284,36 @@
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
+    }
+    /* Responsive design */
+    @media (max-width: 800px) {
+        .dialog-container {
+            width: auto;
+            margin: 10px;
+            padding: 20px;
+        }
+        .message-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .user-message, .ai-message {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 100%;
+        }
+        .user-avatar, .ai-avatar {
+            position: static;
+        }
+        .form-group {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .form-group input {
+            margin-bottom: 10px;
+        }
+        .form-group button {
+            width: 100%;
+        }
     }
 </style>
 </head>
@@ -313,7 +345,7 @@
     function appendMessage(text, isUser) {
         const chatHistory = document.getElementById('chatHistory');
         const messageContainer = document.createElement('div');
-        messageContainer.className = 'message-container' + (isUser ? ' justify-end' : '');
+        messageContainer.className = 'message-container';
 
         const message = document.createElement('div');
         message.className = isUser ? 'message user-message' : 'message ai-message';
@@ -323,9 +355,8 @@
         avatar.className = isUser ? 'avatar user-avatar' : 'avatar ai-avatar';
 
         if (isUser) {
-            messageContainer.appendChild(message);
             messageContainer.appendChild(avatar);
-            messageContainer.style.justifyContent = 'flex-end';
+            messageContainer.appendChild(message);
         } else {
             messageContainer.insertBefore(avatar, messageContainer.firstChild);
             messageContainer.appendChild(message);
@@ -706,7 +737,9 @@
 <script src="/Myblog/js/busuanzi-2.3.pure.min.js"></script>
  
 <!-- ClickLove -->
-
+ 
+<script src="/Myblog/js/clickLove.js"></script>
+ 
 <!-- ClickBoom1 -->
 
 <!-- ClickBoom2 -->
@@ -770,7 +803,9 @@
 </script>
  
 <!-- CanvasBackground -->
-
+ 
+<script src="/Myblog/js/dz.js"></script>
+ 
 <script>
   if (window.mermaid) {
     mermaid.initialize({ theme: "forest" });
