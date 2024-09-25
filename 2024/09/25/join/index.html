@@ -51,6 +51,17 @@
 <body>
   <div id="app">
     
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
       
     <main class="content on">
       <section class="outer">
@@ -474,10 +485,6 @@
   <i class="ri-arrow-up-line"></i>
 </div>
 
-<div class="todark" id="todark">
-  <i class="ri-moon-line"></i>
-</div>
-
     </div>
     <aside class="sidebar on">
       <button class="navbar-toggle"></button>
@@ -535,13 +542,13 @@
   <div class="reward-box">
     
     <div class="reward-item">
-      <img class="reward-img" src="/Myblog/images/alipay.jpg">
+      <img class="reward-img" src="/Myblog/images/alipay1.jpg">
       <span class="reward-type">支付宝</span>
     </div>
     
     
     <div class="reward-item">
-      <img class="reward-img" src="/Myblog/images/wechat.jpg">
+      <img class="reward-img" src="/Myblog/images/wechat1.jpg">
       <span class="reward-type">微信</span>
     </div>
     
@@ -695,11 +702,13 @@
 <script src="/Myblog/js/busuanzi-2.3.pure.min.js"></script>
  
 <!-- ClickLove -->
- 
-<script src="/Myblog/js/clickLove.js"></script>
- 
+
 <!-- ClickBoom1 -->
 
+<script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
+
+<script src="/Myblog/js/clickBoom1.js"></script>
+ 
 <!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
